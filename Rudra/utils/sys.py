@@ -2,8 +2,8 @@ import time
 
 import psutil
 
-from Rudra.misc import _boot_
-from Rudra.utils.formatters import get_readable_time
+from Prabas.misc import _boot_
+from Prabas.utils.formatters import get_readable_time
 
 
 async def bot_sys_stats():

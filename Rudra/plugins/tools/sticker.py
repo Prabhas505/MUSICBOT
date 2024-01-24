@@ -1,6 +1,6 @@
 import base64
 import httpx
-from Rudra import app
+from Prabas import app
 from pyrogram import filters
 import pyrogram
 from uuid import uuid4

@@ -4,17 +4,17 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from Rudra import app
-from Rudra.misc import SUDOERS
-from Rudra.utils.database import (
+from Prabas import app
+from Prabas.misc import SUDOERS
+from Prabas.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
     get_served_chats,
     get_served_users,
 )
-from Rudra.utils.decorators.language import language
-from Rudra.utils.formatters import alpha_to_int
+from Prabas.utils.decorators.language import language
+from Prabas.utils.formatters import alpha_to_int
 from config import adminlist
 
 IS_BROADCASTING = False
@@ -117,7 +117,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_5"])
         text = _["broad_6"]
-        from Rudra.core.userbot import assistants
+        from Prabas.core.userbot import assistants
 
         for num in assistants:
             sent = 0

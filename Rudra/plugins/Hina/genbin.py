@@ -1,6 +1,6 @@
 """MIT License
 
-Copyright (c) [Year] Team Rudra
+Copyright (c) [Year] Team Prabas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,14 +21,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-#Copyright © [LIFETIME] Team Rudra. All rights reserved
+#Copyright © [LIFETIME] Team Prabas. All rights reserved
 
 
 
 
 from pyrogram import Client, filters
 import random
-from Rudra import app
+from Prabas import app
 
 # Constants
 VALID_PREFIXES = [4, 5, 6,3]  # VISA starts with 4, MasterCard with 5, Discover with 6

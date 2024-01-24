@@ -13,12 +13,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-from Rudra import app
-from Rudra.core.call import Rudra
-from Rudra.misc import db
-from Rudra.utils.database import get_assistant, get_authuser_names, get_cmode
-from Rudra.utils.decorators import ActualAdminCB, AdminActual, language
-from Rudra.utils.formatters import alpha_to_int, get_readable_time
+from Prabas import app
+from Prabas.core.call import Prabas
+from Prabas.misc import db
+from Prabas.utils.database import get_assistant, get_authuser_names, get_cmode
+from Prabas.utils.decorators import ActualAdminCB, AdminActual, language
+from Prabas.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -65,7 +65,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Rudra.stop_stream_force(message.chat.id)
+        await Prabas.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -92,7 +92,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Rudra.stop_stream_force(chat_id)
+            await Prabas.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))

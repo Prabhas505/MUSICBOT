@@ -1,4 +1,4 @@
-from Rudra import app
+from Prabas import app
 from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
@@ -69,8 +69,8 @@ async def get_userinfo_img(
 
 # --------------------------------------------------------------------------------- #
 
-bg_path = "Rudra/assets/userinfo.png"
-font_path = "Rudra/assets/hiroko.ttf"
+bg_path = "Prabas/assets/userinfo.png"
+font_path = "Prabas/assets/hiroko.ttf"
 
 # --------------------------------------------------------------------------------- #
 

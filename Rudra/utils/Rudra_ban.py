@@ -1,5 +1,5 @@
 from pyrogram import filters
-from Rudra.utils.admin_check import admin_check
+from Prabas.utils.admin_check import admin_check
 
 
 USE_AS_BOT = True

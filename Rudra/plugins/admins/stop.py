@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.core.call import Rudra
-from Rudra.utils.database import set_loop
-from Rudra.utils.decorators import AdminRightsCheck
-from Rudra.utils.inline import close_markup
+from Prabas import app
+from Prabas.core.call import Prabas
+from Prabas.utils.database import set_loop
+from Prabas.utils.decorators import AdminRightsCheck
+from Prabas.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -16,7 +16,7 @@ from config import BANNED_USERS
 async def stop_music(cli, message: Message, _, chat_id):
     if not len(message.command) == 1:
         return
-    await Rudra.stop_stream(chat_id)
+    await Prabas.stop_stream(chat_id)
     await set_loop(chat_id, 0)
     await message.reply_text(
         _["admin_5"].format(message.from_user.mention), reply_markup=close_markup(_)

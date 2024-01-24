@@ -1,6 +1,6 @@
 import random, os
 from pyrogram import Client, filters, enums 
-from Rudra import app
+from Prabas import app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 

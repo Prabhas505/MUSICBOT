@@ -5,7 +5,7 @@ from pyrogram.types import Message
 from pyrogram import enums
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import FloodWait
-from Rudra import app
+from Prabas import app
 
 # ------------------------------------------------------------------------------- #
 

@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from Rudra import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from Rudra.core.call import Rudra
-from Rudra.utils import seconds_to_min, time_to_seconds
-from Rudra.utils.channelplay import get_channeplayCB
-from Rudra.utils.decorators.language import languageCB
-from Rudra.utils.decorators.play import PlayWrapper
-from Rudra.utils.formatters import formats
-from Rudra.utils.inline import (
+from Prabas import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from Prabas.core.call import Prabas
+from Prabas.utils import seconds_to_min, time_to_seconds
+from Prabas.utils.channelplay import get_channeplayCB
+from Prabas.utils.decorators.language import languageCB
+from Prabas.utils.decorators.play import PlayWrapper
+from Prabas.utils.formatters import formats
+from Prabas.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from Rudra.utils.logger import play_logs
-from Rudra.utils.stream.stream import stream
+from Prabas.utils.logger import play_logs
+from Prabas.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -278,7 +278,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Rudra.stream_call(url)
+                await Prabas.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -491,8 +491,8 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("RudramousAdmin") & ~BANNED_USERS)
-async def Rudramous_check(client, CallbackQuery):
+@app.on_callback_query(filters.regex("PrabasmousAdmin") & ~BANNED_USERS)
+async def Prabasmous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
             "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
@@ -502,7 +502,7 @@ async def Rudramous_check(client, CallbackQuery):
         pass
 
 
-@app.on_callback_query(filters.regex("RudraPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("PrabasPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()

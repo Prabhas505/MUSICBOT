@@ -3,11 +3,11 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from Rudra import app
-from Rudra.utils import help_pannel
-from Rudra.utils.database import get_lang
-from Rudra.utils.decorators.language import LanguageStart, languageCB
-from Rudra.utils.inline.help import help_back_markup, private_help_panel
+from Prabas import app
+from Prabas.utils import help_pannel
+from Prabas.utils.database import get_lang
+from Prabas.utils.decorators.language import LanguageStart, languageCB
+from Prabas.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
 

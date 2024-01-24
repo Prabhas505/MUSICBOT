@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from Rudra import LOGGER, YouTube, app
-from Rudra.misc import db
-from Rudra.utils.database import (
+from Prabas import LOGGER, YouTube, app
+from Prabas.misc import db
+from Prabas.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from Rudra.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from Rudra.utils.exceptions import AssistantErr
-from Rudra.utils.formatters import check_duration, seconds_to_min, speed_converter
-from Rudra.utils.inline.play import stream_markup
-from Rudra.utils.stream.autoclear import auto_clean
-from Rudra.utils.thumbnails import get_thumb
+from Prabas.utils.exceptions import AssistantErr
+from Prabas.utils.formatters import check_duration, seconds_to_min, speed_converter
+from Prabas.utils.inline.play import stream_markup
+from Prabas.utils.stream.autoclear import auto_clean
+from Prabas.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -51,7 +51,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="RudraAss1",
+            name="PrabasAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -61,7 +61,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="RudraAss2",
+            name="PrabasAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -71,7 +71,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="RudraXAss3",
+            name="PrabasXAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -81,7 +81,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="RudraXAss4",
+            name="PrabasXAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -91,7 +91,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="RudraAss5",
+            name="PrabasAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -598,4 +598,4 @@ class Call(PyTgCalls):
             await self.change_stream(client, update.chat_id)
 
 
-Rudra = Call()
+Prabas = Call()

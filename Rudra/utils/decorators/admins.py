@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Rudra import app
-from Rudra.misc import SUDOERS, db
-from Rudra.utils.database import (
+from Prabas import app
+from Prabas.misc import SUDOERS, db
+from Prabas.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -44,7 +44,7 @@ def AdminRightsCheck(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="RudramousAdmin",
+                            callback_data="PrabasmousAdmin",
                         ),
                     ]
                 ]
@@ -140,7 +140,7 @@ def AdminActual(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="RudramousAdmin",
+                            callback_data="PrabasmousAdmin",
                         ),
                     ]
                 ]

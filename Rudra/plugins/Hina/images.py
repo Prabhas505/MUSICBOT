@@ -1,6 +1,6 @@
 import requests
 from requests import get 
-from Rudra import app
+from Prabas import app
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
 

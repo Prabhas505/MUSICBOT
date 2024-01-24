@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.utils import extract_user, int_to_alpha
-from Rudra.utils.database import (
+from Prabas import app
+from Prabas.utils import extract_user, int_to_alpha
+from Prabas.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from Rudra.utils.decorators import AdminActual, language
-from Rudra.utils.inline import close_markup
+from Prabas.utils.decorators import AdminActual, language
+from Prabas.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 

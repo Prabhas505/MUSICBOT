@@ -5,7 +5,7 @@ import time
 from pyrogram import *
 from pyrogram.types import *
 from random import choice
-from Rudra import app
+from Prabas import app
 from config import API_ID, API_HASH, ASSUSERNAME
 
 IMG = ["https://telegra.ph/file/1cefd3211a5acdcd332415.jpg", "https://telegra.ph/file/130d743cea510c563af6e3.jpg", "https://telegra.ph/file/1f7ae22a1491f530c05279.jpg", "https://telegra.ph/file/12f1c9c98452ae9a958f7d.jpg"]
@@ -34,7 +34,7 @@ async def clone(bot, msg: Message):
     try:
         await text.edit("Booting Your Client")
                    # change this Directry according to ur repo
-        client = Client(":memory:", API_ID, API_HASH, bot_token=phone, plugins={"root": "Rudra.modules"})
+        client = Client(":memory:", API_ID, API_HASH, bot_token=phone, plugins={"root": "Prabas.modules"})
         await client.start()
         user = await client.get_me()
         await msg.reply(f"Your Client Has Been Successfully Started As @{user.username}! ✅ \n\n Now Add Your Bot And Assistant @{ASSUSERNAME} To Your Chat!\n\nThanks for Cloning.")

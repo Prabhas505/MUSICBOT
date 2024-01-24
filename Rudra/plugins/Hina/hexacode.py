@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from Rudra import app
+from Prabas import app
 from config import BOT_USERNAME
 
 
@@ -16,7 +16,7 @@ def text_to_hex(text):
     return hex_representation
 
 
-# Rudra_JAAT_1 ...........................
+# Prabas_JAAT_1 ...........................
 
 @app.on_message(filters.command("code"))
 def convert_text(_, message):

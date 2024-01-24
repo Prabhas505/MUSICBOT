@@ -6,7 +6,7 @@
     "python3",
     "telegram",
     "bot",
-    "Rudra",
+    "Prabas",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -29,7 +29,7 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "mongodb+srv://RUDRA_JAAT1:RUDRAJAAT@rudrajaat.zbir7lx.mongodb.net/?retryWrites=true&w=majority",
+        "value": "mongodb+srv://Prabas_JAAT1:PrabasJAAT@Prabasjaat.zbir7lx.mongodb.net/?retryWrites=true&w=majority",
         "required": true
       },
       "OWNER_ID": {

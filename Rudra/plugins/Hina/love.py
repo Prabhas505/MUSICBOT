@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import random
-from Rudra import app
+from Prabas import app
 
 def get_random_message(love_percentage):
     if love_percentage <= 30:

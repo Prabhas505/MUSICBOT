@@ -1,6 +1,6 @@
 """** MIT License
 
-Copyright (c) [Year] Team Rudra
+Copyright (c) [Year] Team Prabas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,7 +25,7 @@ SOFTWARE. **"""
 from pyrogram import Client, filters
 import requests
 from io import BytesIO
-from Rudra import app
+from Prabas import app
 
 # Fill these out with your credentials
 

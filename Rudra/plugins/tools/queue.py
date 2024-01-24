@@ -6,12 +6,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from Rudra import app
-from Rudra.misc import db
-from Rudra.utils import RudraBin, get_channeplayCB, seconds_to_min
-from Rudra.utils.database import get_cmode, is_active_chat, is_music_playing
-from Rudra.utils.decorators.language import language, languageCB
-from Rudra.utils.inline import queue_back_markup, queue_markup
+from Prabas import app
+from Prabas.misc import db
+from Prabas.utils import PrabasBin, get_channeplayCB, seconds_to_min
+from Prabas.utils.database import get_cmode, is_active_chat, is_music_playing
+from Prabas.utils.decorators.language import language, languageCB
+from Prabas.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
@@ -176,7 +176,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             return await CallbackQuery.edit_message_text(msg, reply_markup=buttons)
         if "✨" in msg:
             msg = msg.replace("✨", "")
-        link = await RudraBin(msg)
+        link = await PrabasBin(msg)
         med = InputMediaPhoto(media=link, caption=_["queue_3"].format(link))
         await CallbackQuery.edit_message_media(media=med, reply_markup=buttons)
     else:

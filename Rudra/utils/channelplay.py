@@ -1,5 +1,5 @@
-from Rudra import app
-from Rudra.utils.database import get_cmode
+from Prabas import app
+from Prabas.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):

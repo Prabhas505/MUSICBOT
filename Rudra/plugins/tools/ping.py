@@ -3,11 +3,11 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.core.call import Rudra
-from Rudra.utils import bot_sys_stats
-from Rudra.utils.decorators.language import language
-from Rudra.utils.inline import supp_markup
+from Prabas import app
+from Prabas.core.call import Prabas
+from Prabas.utils import bot_sys_stats
+from Prabas.utils.decorators.language import language
+from Prabas.utils.inline import supp_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
@@ -19,7 +19,7 @@ async def ping_com(client, message: Message, _):
         photo=PING_IMG_URL,
         caption=_["ping_1"].format(app.mention),
     )
-    pytgping = await Rudra.ping()
+    pytgping = await Prabas.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(

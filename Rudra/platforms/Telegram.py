@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from Rudra import app
-from Rudra.utils.formatters import (
+from Prabas import app
+from Prabas.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,

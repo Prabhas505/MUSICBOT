@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.misc import SUDOERS
-from Rudra.utils.database import add_sudo, remove_sudo
-from Rudra.utils.decorators.language import language
-from Rudra.utils.extraction import extract_user
-from Rudra.utils.inline import close_markup
+from Prabas import app
+from Prabas.misc import SUDOERS
+from Prabas.utils.database import add_sudo, remove_sudo
+from Prabas.utils.decorators.language import language
+from Prabas.utils.extraction import extract_user
+from Prabas.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 

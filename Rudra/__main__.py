@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from Rudra import LOGGER, app, userbot
-from Rudra.core.call import Rudra
-from Rudra.misc import sudo
-from Rudra.plugins import ALL_MODULES
-from Rudra.utils.database import get_banned_users, get_gbanned
+from Prabas import LOGGER, app, userbot
+from Prabas.core.call import Prabas
+from Prabas.misc import sudo
+from Prabas.plugins import ALL_MODULES
+from Prabas.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -35,27 +35,27 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("Rudra.plugins" + all_module)
-    LOGGER("Rudra.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+        importlib.import_module("Prabas.plugins" + all_module)
+    LOGGER("Prabas.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
     await userbot.start()
-    await Rudra.start()
+    await Prabas.start()
     try:
-        await Rudra.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Prabas.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("Rudra").error(
+        LOGGER("Prabas").error(
             "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\n𝗥𝗨𝗗𝗥𝗔 𝗕𝗢𝗧 𝗦𝗧𝗢𝗣........"
         )
         exit()
     except:
         pass
-    await Rudra.decorators()
-    LOGGER("Rudra").info(
+    await Prabas.decorators()
+    LOGGER("Prabas").info(
         "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗠𝗥 𝗥𝗨𝗗𝗥𝗔☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("Rudra").info("𝗦𝗧𝗢𝗣 𝗥𝗨𝗗𝗥𝗔 𝗠𝗨𝗦𝗜𝗖🎻 𝗕𝗢𝗧..")
+    LOGGER("Prabas").info("𝗦𝗧𝗢𝗣 𝗥𝗨𝗗𝗥𝗔 𝗠𝗨𝗦𝗜𝗖🎻 𝗕𝗢𝗧..")
 
 
 if __name__ == "__main__":

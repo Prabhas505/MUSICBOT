@@ -1,4 +1,4 @@
-from Rudra import app as app
+from Prabas import app as app
 from config import BOT_USERNAME
 from pyrogram import filters
 from pyrogram.types import (

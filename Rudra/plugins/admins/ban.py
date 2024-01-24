@@ -2,11 +2,11 @@ import asyncio
 from pyrogram import enums
 from pyrogram.enums import ChatType
 from pyrogram import filters, Client
-from Rudra import app
+from Prabas import app
 from pyrogram.types import ChatPermissions, ChatPrivileges
 from config import OWNER_ID
-from Rudra.misc import SUDOERS
-from Rudra.utils.Rudra_ban import admin_filter
+from Prabas.misc import SUDOERS
+from Prabas.utils.Prabas_ban import admin_filter
 from pyrogram.types import (
     Message,
     CallbackQuery,

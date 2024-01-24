@@ -3,7 +3,7 @@ from pyrogram import Client, enums, filters, idle
 import re
 from requests import get
 import asyncio
-from Rudra import app as app
+from Prabas import app as app
 
 from pyrogram.types import InlineKeyboardButton as ikb, InlineKeyboardMarkup as ikm, Message
 from pyrogram.enums import ChatAction, ParseMode
@@ -82,7 +82,7 @@ async def unshort(bot, message):
 # app.add_handler(MessageHandler(unshort))
 __help__ = """
 ᴍᴀᴋᴇ sʜᴏʀᴛs ᴏғ ᴀ ɢɪᴠᴇɴ ʟɪɴᴋ 
- ❍ /short <url>  *:Example `/short https://t.me/RUDRA_JAAT`.
+ ❍ /short <url>  *:Example `/short https://t.me/Prabas_JAAT`.
  *"""
 
 __mod_name__ = "Sʜᴏʀᴛᴇɴᴇʀ"

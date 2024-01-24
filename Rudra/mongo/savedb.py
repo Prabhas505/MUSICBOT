@@ -1,4 +1,4 @@
-from Rudra.utils.mongo import db
+from Prabas.utils.mongo import db
 
 savedb = db.save
 

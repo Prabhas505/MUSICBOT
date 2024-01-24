@@ -1,4 +1,4 @@
-from Rudra import app 
+from Prabas import app 
 import asyncio
 import random
 from pyrogram import Client, filters

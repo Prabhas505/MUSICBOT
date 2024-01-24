@@ -1,8 +1,8 @@
-from Rudra import app
+from Prabas import app
 from config import OWNER_ID
 from pyrogram import filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from Rudra.utils.Rudra_ban import admin_filter
+from Prabas.utils.Prabas_ban import admin_filter
 
 BOT_ID = "6196153811"
 

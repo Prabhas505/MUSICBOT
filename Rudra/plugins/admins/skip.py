@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from Rudra import YouTube, app
-from Rudra.core.call import Rudra
-from Rudra.misc import db
-from Rudra.utils.database import get_loop
-from Rudra.utils.decorators import AdminRightsCheck
-from Rudra.utils.inline import close_markup, stream_markup
-from Rudra.utils.stream.autoclear import auto_clean
-from Rudra.utils.thumbnails import get_thumb
+from Prabas import YouTube, app
+from Prabas.core.call import Prabas
+from Prabas.misc import db
+from Prabas.utils.database import get_loop
+from Prabas.utils.decorators import AdminRightsCheck
+from Prabas.utils.inline import close_markup, stream_markup
+from Prabas.utils.stream.autoclear import auto_clean
+from Prabas.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -48,7 +48,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_markup(_),
                                     )
-                                    await Rudra.stop_stream(chat_id)
+                                    await Prabas.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -75,7 +75,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await Rudra.stop_stream(chat_id)
+                    return await Prabas.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -86,7 +86,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await Rudra.stop_stream(chat_id)
+                return await Prabas.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -111,7 +111,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Rudra.skip_stream(chat_id, link, video=status, image=image)
+            await Prabas.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -144,7 +144,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Rudra.skip_stream(chat_id, file_path, video=status, image=image)
+            await Prabas.skip_stream(chat_id, file_path, video=status, image=image)
         except:
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -164,7 +164,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Rudra.skip_stream(chat_id, videoid, video=status)
+            await Prabas.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -186,7 +186,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await Rudra.skip_stream(chat_id, queued, video=status, image=image)
+            await Prabas.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":

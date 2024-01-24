@@ -1,4 +1,4 @@
-from Rudra import app
+from Prabas import app
 from pyrogram import filters
 from pyrogram.enums import ParseMode
 

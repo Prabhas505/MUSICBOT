@@ -3,9 +3,9 @@ from config import BOT_USERNAME
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
-from Rudra import app
-from Rudra.mongo.readable_time import get_readable_time
-from Rudra.mongo.afkdb import add_afk, is_afk, remove_afk
+from Prabas import app
+from Prabas.mongo.readable_time import get_readable_time
+from Prabas.mongo.afkdb import add_afk, is_afk, remove_afk
 
 
 

@@ -4,9 +4,9 @@ import speedtest
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.misc import SUDOERS
-from Rudra.utils.decorators.language import language
+from Prabas import app
+from Prabas.misc import SUDOERS
+from Prabas.utils.decorators.language import language
 
 
 def testspeed(m, _):

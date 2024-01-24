@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from Rudra import app
+from Prabas import app
 
 
 

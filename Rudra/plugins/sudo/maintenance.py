@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.misc import SUDOERS
-from Rudra.utils.database import (
+from Prabas import app
+from Prabas.misc import SUDOERS
+from Prabas.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,

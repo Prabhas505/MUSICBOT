@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from Rudra import app
+from Prabas import app
 
 
 @app.on_message(filters.command("weather"))

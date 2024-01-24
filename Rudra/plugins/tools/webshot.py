@@ -5,7 +5,7 @@ import requests
 from aiohttp import ClientSession
 from pyrogram import filters
 from pyrogram.types import *
-from Rudra import app
+from Prabas import app
 
 button = InlineKeyboardMarkup([[
             InlineKeyboardButton("⌯ ᴄʟᴏsᴇ ⌯", callback_data="close_data")

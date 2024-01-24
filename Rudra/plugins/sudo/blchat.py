@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import app
-from Rudra.misc import SUDOERS
-from Rudra.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from Rudra.utils.decorators.language import language
+from Prabas import app
+from Prabas.misc import SUDOERS
+from Prabas.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from Prabas.utils.decorators.language import language
 from config import BANNED_USERS
 
 

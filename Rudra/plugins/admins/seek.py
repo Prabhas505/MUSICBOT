@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Rudra import YouTube, app
-from Rudra.core.call import Rudra
-from Rudra.misc import db
-from Rudra.utils import AdminRightsCheck, seconds_to_min
-from Rudra.utils.inline import close_markup
+from Prabas import YouTube, app
+from Prabas.core.call import Prabas
+from Prabas.misc import db
+from Prabas.utils import AdminRightsCheck, seconds_to_min
+from Prabas.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await Rudra.seek_stream(
+        await Prabas.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),

@@ -1,6 +1,6 @@
 import requests, config
 from pyrogram import filters
-from Rudra import app
+from Prabas import app
 from pyrogram.enums import ChatAction, ParseMode
 
 api_key ="908fa7e9-220b-4357-ac2f-7eb499005b5f"

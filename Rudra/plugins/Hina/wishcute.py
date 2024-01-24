@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 import requests
-from Rudra import app 
+from Prabas import app 
 
 SUPPORT_CHAT = "mei_support"
 

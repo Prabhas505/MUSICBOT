@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from Rudra import app
-from Rudra.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from Rudra.utils.decorators import language
-from Rudra.utils.inline.settings import playmode_users_markup
+from Prabas import app
+from Prabas.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from Prabas.utils.decorators import language
+from Prabas.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 

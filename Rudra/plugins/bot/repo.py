@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from Rudra import app
+from Prabas import app
 from config import BOT_USERNAME
 
 start_txt = """**
@@ -30,38 +30,38 @@ async def start(_, msg):
         ],
         [
           InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/HEROKUFREECC"),
-          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/RUDRA_JAAT"),
+          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Prabas_JAAT"),
           ],
                [
                 InlineKeyboardButton("𝗟𝗜𝗩𝗘 𝗖𝗖", url=f"https://t.me/ALLTYPECC"),
 
 ],
 [
-              InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟︎", url=f"https://github.com/RudraTEAM/RudraBANALL"),
-              InlineKeyboardButton("︎𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/RudraTEAM/Rudra"),
+              InlineKeyboardButton("𝗕𝗔𝗡 𝗔𝗟𝗟︎", url=f"https://github.com/PrabasTEAM/PrabasBANALL"),
+              InlineKeyboardButton("︎𝗠𝗨𝗦𝗜𝗖", url=f"https://github.com/PrabasTEAM/Prabas"),
               ],
               [
-              InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧︎", url=f"https://github.com/RudraTEAM/HinaRobot"),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/RudraTEAM/RudraCHATBOT"),
+              InlineKeyboardButton("𝗠𝗔𝗡𝗔𝗚𝗘𝗠𝗘𝗡𝗧︎", url=f"https://github.com/PrabasTEAM/HinaRobot"),
+InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/PrabasTEAM/PrabasCHATBOT"),
 ],
 [
-InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/RudraTEAM/RudraSTRINGBOT"),
-InlineKeyboardButton("𝗖𝗛𝗔𝗧𝗚𝗣𝗧", url=f"https://github.com/RudraTEAM/RudraCHATGPT"),
+InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚𝗕𝗢𝗧", url=f"https://github.com/PrabasTEAM/PrabasSTRINGBOT"),
+InlineKeyboardButton("𝗖𝗛𝗔𝗧𝗚𝗣𝗧", url=f"https://github.com/PrabasTEAM/PrabasCHATGPT"),
 ],
 [
-              InlineKeyboardButton("𝗩𝗣𝗦", url=f"https://github.com/RudraTEAM/Kaali-Linux"),
-              InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘︎", url=f"https://github.com/RudraTEAM/RudraMOVIEBOT"),
+              InlineKeyboardButton("𝗩𝗣𝗦", url=f"https://github.com/PrabasTEAM/Kaali-Linux"),
+              InlineKeyboardButton("𝗠𝗢𝗩𝗜𝗘︎", url=f"https://github.com/PrabasTEAM/PrabasMOVIEBOT"),
               ],
               [
-              InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗛𝗔𝗖𝗞︎", url=f"https://github.com/RudraTEAM/RudraSTRINGHACK"),
-InlineKeyboardButton("𝗜𝗗 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/RudraTEAM/RudraIDCHAT"),
+              InlineKeyboardButton("𝗦𝗧𝗥𝗜𝗡𝗚 𝗛𝗔𝗖𝗞︎", url=f"https://github.com/PrabasTEAM/PrabasSTRINGHACK"),
+InlineKeyboardButton("𝗜𝗗 𝗖𝗛𝗔𝗧 𝗕𝗢𝗧", url=f"https://github.com/PrabasTEAM/PrabasIDCHAT"),
 ],
 [
-InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/RudraTEAM/RudraUSERBOT"),
-InlineKeyboardButton("𝗦𝗘𝗔𝗥𝗖𝗛𝗕𝗢𝗧", url=f"https://github.com/RudraTEAM/SEARCH_BOT"),
+InlineKeyboardButton("𝗨𝗦𝗘𝗥𝗕𝗢𝗧", url=f"https://github.com/PrabasTEAM/PrabasUSERBOT"),
+InlineKeyboardButton("𝗦𝗘𝗔𝗥𝗖𝗛𝗕𝗢𝗧", url=f"https://github.com/PrabasTEAM/SEARCH_BOT"),
 ],
 [
-InlineKeyboardButton("𝗖𝗖 𝗕𝗢𝗧", url=f"https://github.com/RudraTEAM/CC_BOT"),
+InlineKeyboardButton("𝗖𝗖 𝗕𝗢𝗧", url=f"https://github.com/PrabasTEAM/CC_BOT"),
 
         ]]
     

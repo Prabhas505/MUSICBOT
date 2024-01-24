@@ -2,7 +2,7 @@ import os
 import aiohttp
 import aiofiles
 from aiohttp import ContentTypeError
-from Rudra import app as app
+from Prabas import app as app
 from pyrogram import filters
 
 def check_filename(filroid):

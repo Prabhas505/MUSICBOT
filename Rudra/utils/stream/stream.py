@@ -5,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from Rudra import Carbon, YouTube, app
-from Rudra.core.call import Rudra
-from Rudra.misc import db
-from Rudra.utils.database import add_active_video_chat, is_active_chat
-from Rudra.utils.exceptions import AssistantErr
-from Rudra.utils.inline import aq_markup, close_markup, stream_markup
-from Rudra.utils.pastebin import RudraBin
-from Rudra.utils.stream.queue import put_queue, put_queue_index
-from Rudra.utils.thumbnails import get_thumb
+from Prabas import Carbon, YouTube, app
+from Prabas.core.call import Prabas
+from Prabas.misc import db
+from Prabas.utils.database import add_active_video_chat, is_active_chat
+from Prabas.utils.exceptions import AssistantErr
+from Prabas.utils.inline import aq_markup, close_markup, stream_markup
+from Prabas.utils.pastebin import PrabasBin
+from Prabas.utils.stream.queue import put_queue, put_queue_index
+from Prabas.utils.thumbnails import get_thumb
 
 
 async def stream(
@@ -32,7 +32,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await Rudra.force_stop_stream(chat_id)
+        await Prabas.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -79,7 +79,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_14"])
-                await Rudra.join_call(
+                await Prabas.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -116,7 +116,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await RudraBin(msg)
+            link = await PrabasBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -165,7 +165,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Rudra.join_call(
+            await Prabas.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -225,7 +225,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Rudra.join_call(chat_id, original_chat_id, file_path, video=None)
+            await Prabas.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -277,7 +277,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Rudra.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Prabas.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -333,7 +333,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Rudra.join_call(
+            await Prabas.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Rudra.join_call(
+            await Prabas.join_call(
                 chat_id,
                 original_chat_id,
                 link,

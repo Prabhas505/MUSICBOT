@@ -1,7 +1,7 @@
 import os, time
 import openai
 from pyrogram import filters
-from Rudra import app
+from Prabas import app
 from pyrogram.enums import ChatAction, ParseMode
 from gtts import gTTS
 

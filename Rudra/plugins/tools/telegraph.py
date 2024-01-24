@@ -1,6 +1,6 @@
 from telegraph import upload_file
 from pyrogram import filters
-from Rudra import app
+from Prabas import app
 from pyrogram.types import InputMediaPhoto
 
 
